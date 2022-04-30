@@ -12,8 +12,14 @@
     <header>
     <nav class="navbar">
 <?php
-if($_SERVER['HTTP_REFERER'] == 'http://www.alternance.loc/?controller=home&action=agences')
+if(!empty($_GET['action']))
 {
+    $previous = "javascript:history.go(-1)";
+    $previous = $_SERVER['HTTP_REFERER'];
+    if($_GET['action'] != 'agences')
+    {
+        echo '<a class="btn btn-primary" href="' . $previous . '">Retour</a>';
+    }
     echo'<a class="btn btn-primary" href="/">Accueil</a>';
 }
 else

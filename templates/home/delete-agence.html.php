@@ -15,6 +15,7 @@
     </div>
     <br>
     <div>
+        <a class="btn btn-info" href="/?controller=home&action=agences">Annuler</a>
         <input class="btn btn-danger" type="submit" name="submit" value="Supprimer">
     </div>
 </form>

@@ -58,11 +58,11 @@ Renseignez-vous sur vos futurs interlocuteurs. A partir du moment où vous postu
 <br>
 <li class="font-bold">Pour aller plus loin</li>
 <p>Découvrez les conseils des recruteurs des métiers du digital avec notre série de podcast #alternance sur Youtube.</p>
-<a class="btn btn-primary" href="https://www.youtube.com/watch?v=OXhfSk-cPhU&feature=emb_title">Comment faire la difference auprès des recruteurs du secteur Tech ?</a>
+<a class="btn btn-primary" href="https://www.youtube.com/watch?v=OXhfSk-cPhU&feature=emb_title" target="_blank">Comment faire la difference auprès des recruteurs du secteur Tech ?</a>
 <br>
 <br>
-<a class="btn btn-primary" href="https://www.youtube.com/watch?v=dmUwLdXmOXY&feature=emb_title">Comment négocier sa rémunération en entretien ?</a>
+<a class="btn btn-primary" href="https://www.youtube.com/watch?v=dmUwLdXmOXY&feature=emb_title" target="_blank">Comment négocier sa rémunération en entretien ?</a>
 <br>
 <br>
-<a class="btn btn-primary" href="https://www.youtube.com/watch?v=WRjxlEB4T60&feature=emb_title">Quelle posture adopter en entretien?</a>
+<a class="btn btn-primary" href="https://www.youtube.com/watch?v=WRjxlEB4T60&feature=emb_title" target="_blank">Quelle posture adopter en entretien?</a>
 </ul>
