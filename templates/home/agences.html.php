@@ -1,17 +1,18 @@
+<h1 class="text-center">Liste des agences</h1>
 <a href="/?controller=home&action=createForm"> Ajout d'une agence </a> 
-        <table>
-            <thead>
+        <table class="table table-bordered">
+            <thead class="thead-dark">
             <tr>
-                <th>Nom</th>
-                <th>Site Internet</th>
-                <th>Email</th>
-                <th>Numéro de téléphone</th>
-                <th>Pays</th>
-                <th>Ville</th>
-                <th>Adresse</th>
-                <th>Code Postal</th>
-                <th>A postulé</th>
-                <th>Actions</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Site Internet</th>
+                <th scope="col">Email</th>
+                <th scope="col">Numéro de téléphone</th>
+                <th scope="col">Pays</th>
+                <th scope="col">Ville</th>
+                <th scope="col">Adresse</th>
+                <th scope="col">Code Postal</th>
+                <th scope="col">A postulé</th>
+                <th scope="col">Actions</th>
             </tr>
     </thead>
     <?php foreach($data as $key) : ?>
