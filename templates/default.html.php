@@ -10,11 +10,17 @@
 </head>
 <body>
     <header>
-    <nav>
-        <ul>
-            <li><a href="/?controller=home">Accueil</a></li>
-            <li><a href="/?controller=home&action=agences">Agences</a></li>
-        </ul>
+    <nav class="navbar">
+<?php
+if($_SERVER['HTTP_REFERER'] == 'http://www.alternance.loc/?controller=home&action=agences')
+{
+    echo'<a class="btn btn-primary" href="/">Accueil</a>';
+}
+else
+{
+    echo '<a class="btn btn-primary" href="/?controller=home&action=agences">Agences</a>';
+}
+?>
     </nav>
     </header>
 

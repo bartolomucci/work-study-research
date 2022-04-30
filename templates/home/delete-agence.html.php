@@ -1,11 +1,20 @@
-<h2></h2>
+<h1 class="text-center">Suppression de l'agence <?= $data['name'] ?></h1>
 
-<form action="/?controller=home&action=delete&id=<?= $data['id'] ?>" method="POST">
+<form class="text-center" action="/?controller=home&action=delete&id=<?= $data['id'] ?>" method="POST">
     <div>
         <label for="choice">Êtes-vous sûr de vouloir supprimer la société <?= $data['name'] ?> ? (id n°<?=$data['id']?>)</label>
-        <input type="radio" name="choice" value="yes"> Oui 
-        <input type="radio" name="choice" value="no"> Non
+    </div>
+
+    <div>
+        <input type="radio" name="choice" value="yes" id="oui"> 
+        <label for="oui">Oui</label>
     </div>
     <div>
-        <input type="submit" name="submit" value="Supprimer">
+        <input type="radio" name="choice" value="no" id="non"> 
+        <label for="non">Non</label>
+    </div>
+    <br>
+    <div>
+        <input class="btn btn-danger" type="submit" name="submit" value="Supprimer">
+    </div>
 </form>

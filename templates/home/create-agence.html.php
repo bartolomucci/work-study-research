@@ -1,4 +1,6 @@
-<form action="/?controller=home&action=create" method="POST">
+<h1 class="text-center">Création d'une agence</h1>
+
+<form class="text-center" action="/?controller=home&action=create" method="POST">
     <div>
         <label for="name">Nom de l'Agence</label>
         <input type="text" name="name">
@@ -33,6 +35,6 @@
     </div>
 
     <div>
-        <input type="submit" name="submit" value="Créer">
+        <input class="btn btn-success" type="submit" name="submit" value="Créer">
     </div>
 </form>

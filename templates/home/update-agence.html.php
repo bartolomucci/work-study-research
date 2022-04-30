@@ -1,4 +1,6 @@
-<form action="/?controller=home&action=update&id=<?= $data['id'] ?>" method="POST">
+<h1 class="text-center">Modification de l'agence <?= $data['name'] ?></h1>
+
+<form class="text-center" action="/?controller=home&action=update&id=<?= $data['id'] ?>" method="POST">
     <div>
         <label for="name">Nom de l'Agence</label>
         <input type="text" name="name" value="<?= $data['name'] ?>">
@@ -33,6 +35,6 @@
     </div>
 
     <div>
-        <input type="submit" name="submit" value="Modifier">
+        <input class="btn btn-warning" type="submit" name="submit" value="Modifier">
     </div>
 </form>
