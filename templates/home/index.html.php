@@ -1,1 +1,1 @@
-<h1>Salut, tu es bien sur la page d'accueil du HomeController</h1>
+<h1>A la recherche d'une alternance</h1>

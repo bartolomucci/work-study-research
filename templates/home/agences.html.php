@@ -31,8 +31,8 @@
                     <td><input type="radio"></td>
                 <?php endif; ?>
                 <td>
-                    <a href="/?controller=home&action=update&id=<?= $key['id'] ?>">Modifier</a>
-                    <a href="/?controller=home&action=delete&id=<?= $key['id'] ?>">Supprimer</a>
+                    <a href="/?controller=home&action=updateForm&id=<?= $key['id'] ?>">Modifier</a>
+                    <a href="/?controller=home&action=deleteForm&id=<?= $key['id'] ?>">Supprimer</a>
                 </td>
             </tr>
     </tbody>

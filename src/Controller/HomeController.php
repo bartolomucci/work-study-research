@@ -47,4 +47,59 @@ class HomeController
         }
     }
 
+    public function updateForm()
+    {
+        $instanceAgence = new AgenceManager();
+        $byId = $instanceAgence->getAgencebyId($_GET['id']);
+        $view = new View('home/update-agence.html.php');
+        $view->render($byId);
+    }
+
+    public function update()
+    {
+
+        if(isset($_POST['submit']))
+        {
+            if(!empty($_POST))
+            {
+                $instanceAgence = new AgenceManager();
+                $listesAgences = $instanceAgence->updateById($_POST['name'], $_POST['url'], $_POST['email'], $_POST['phone'], $_POST['country'], $_POST['city'], $_POST['address'], $_POST['zip'], $_GET['id']);
+                header('Location: /?controller=home&action=agences');
+            }
+            else
+            {
+                echo '<p>Certains champs obligatoires semblent manquants</p>';
+            }
+        }
+        else
+        {
+            header('Refresh: 0');
+        }
+    }
+
+    public function deleteForm()
+    {
+        $instanceAgence = new AgenceManager();
+        $byId = $instanceAgence->getAgencebyId($_GET['id']);
+        $view = new View('home/delete-agence.html.php');
+        $view->render($byId);
+    }
+
+    public function delete()
+    {
+
+        if(isset($_POST['submit']))
+        {
+            if($_POST['choice'] == 'yes')
+            {
+                $instanceAgence = new AgenceManager();
+                $listesAgences = $instanceAgence->deletebyId($_GET['id']);
+                header('Location: /?controller=home&action=agences');
+            }
+            else
+            {
+                header('Location: /?controller=home&action=agences&del=aborted');;
+            }
+        }
+    }
 }
