@@ -24,7 +24,7 @@ if(!empty($_GET['action']))
 }
 else
 {
-    echo '<a class="btn btn-primary" href="/?controller=home&action=agences">Agences</a>';
+    echo '<a class="btn btn-primary" href="/?controller=home&action=agences">Liste</a>';
 }
 ?>
     </nav>

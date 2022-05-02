@@ -1,1 +1,1 @@
-<h1>La page demandée n'existe malheureusement pas</h1>
+<h1 class="text-center"><span class="text-uppercase">Erreur:</span> La page demandée n'existe pas</h1>

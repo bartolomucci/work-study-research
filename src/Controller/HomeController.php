@@ -102,4 +102,34 @@ class HomeController
             }
         }
     }
+
+    public function updateContactForm()
+    {
+        $instanceAgence = new AgenceManager();
+        $byId = $instanceAgence->getAgencebyId($_GET['id']);
+        $view = new View('home/update-contact.html.php');
+        $view->render($byId);
+    }
+
+    public function updateContact()
+    {
+            
+            if(isset($_POST['submit']))
+            {
+                if(!empty($_POST))
+                {
+                    $instanceAgence = new AgenceManager();
+                    $listesAgences = $instanceAgence->updateContactById( $_GET['id'],intval($_POST['choice']));
+                    header('Location: /?controller=home&action=agences');
+                }
+                else
+                {
+                    echo '<p>Certains champs obligatoires semblent manquants</p>';
+                }
+            }
+            else
+            {
+                header('Refresh: 0');
+            }
+    }
 }

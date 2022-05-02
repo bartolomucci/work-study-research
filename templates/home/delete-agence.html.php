@@ -2,7 +2,7 @@
 
 <form class="text-center" action="/?controller=home&action=delete&id=<?= $data['id'] ?>" method="POST">
     <div>
-        <label for="choice">Êtes-vous sûr de vouloir supprimer la société <?= $data['name'] ?> ? (id n°<?=$data['id']?>)</label>
+        <label for="choice">Êtes-vous sûr de vouloir supprimer la société <?= $data['name'] ?> ? <span class="text-uppercase font-weight-bold">(id=<?=$data['id']?>)</span></label>
     </div>
 
     <div>
@@ -15,7 +15,6 @@
     </div>
     <br>
     <div>
-        <a class="btn btn-info" href="/?controller=home&action=agences">Annuler</a>
         <input class="btn btn-danger" type="submit" name="submit" value="Supprimer">
     </div>
 </form>

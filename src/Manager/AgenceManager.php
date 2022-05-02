@@ -67,4 +67,14 @@ class AgenceManager extends Manager
         ]);
     }
 
+    public function updateContactbyId(int $id, string $is_contacted)
+    {
+        $sql = 'UPDATE ' . self::TABLE . ' SET is_contacted = :is_contacted WHERE id = :id';
+        $req = $this->getPdo()->prepare($sql);
+        $req->execute([
+            'is_contacted' => $is_contacted,
+            'id' => $id,
+        ]);
+    }
+
 }
